@@ -44,6 +44,7 @@
         <div class="ar-item"><span>🚛</span><div><strong>Collectors</strong><span>Accept jobs, earn income</span></div></div>
         <div class="ar-item"><span>♻️</span><div><strong>Recyclers</strong><span>Bid on collected waste</span></div></div>
         <div class="ar-item"><span>🏙️</span><div><strong>City Authority</strong><span>Monitor & manage the system</span></div></div>
+        <div class="ar-item"><span>🏙️</span><div><strong>Github Actions</strong><span>Testing github actions integration</span></div></div>
       </div>
     </div>
   </div>
