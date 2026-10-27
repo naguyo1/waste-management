@@ -25,11 +25,21 @@ export async function verifyToken(token: string): Promise<JWTPayload | null> {
   } catch { return null; }
 }
 
-export function setSessionCookie(cookies: Cookies, token: string) {
+/* export function setSessionCookie(cookies: Cookies, token: string) {
   cookies.set(COOKIE, token, {
     path: '/', httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax', maxAge: EXPIRES,
+  });
+} */
+
+export function setSessionCookie(cookies: Cookies, token: string) {
+  cookies.set(COOKIE, token, {
+    path: '/',
+    httpOnly: true,
+    secure: process.env.COOKIE_SECURE === 'true',
+    sameSite: 'lax',
+    maxAge: EXPIRES,
   });
 }
 
